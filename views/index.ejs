@@ -1,0 +1,37 @@
+<%- include('./partials/head') %>
+
+<main>
+  <section class="top-head">
+    <h2>Check Your Squad!</h2>
+  </section>
+
+  <!-- <a href="/?squad=squad-a-2022">Squad A</a>
+  <a href="/?squad=squad-b-2022">Squad B</a>
+  <a href="/?squad=squat-c-2022">Squad C</a>
+  <hr />
+
+  <a href="/?squad=<%= squad.slug %>&orderBy=name">Sorteer op naam</a>
+  <hr /> -->
+  <section class="members-squad">
+    <% squad.members.forEach(member => { %>
+    <article>
+      <% if (member.avatar) { %>
+      <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>" />
+      <% }else{ %>
+      <img src="/placeholder.jpg" alt="Placeholder avatar" />
+      <% } %>
+      <h2>
+        <%= member.name %> <%= member.prefix %> <%= member.surname %>
+      </h2>
+      <p>
+        <%= member.role %>
+      </p>
+      <div>
+        <a href="<%= member.website %>">Visitekaartje</a>
+      </div>
+    </article>
+    <% }) %>
+  </section>
+</main>
+
+<%- include('./partials/foot') %>
