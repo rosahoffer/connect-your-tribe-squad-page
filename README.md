@@ -1,5 +1,5 @@
-# Squadpage
-* Een squadpagina op basis van een bestaande API gesorteerd op relatie-status.
+# Squadpage - Find Your Love!
+Een squadpagina op basis van een bestaande API gesorteerd op relatie-status.
 ![tablet_laptop_and_smartphone_squadpage](https://user-images.githubusercontent.com/112861375/220641296-2c960c3b-2d78-4c50-b5e2-6fd4cefab504.png)
 
 ## Inhoudsopgave
