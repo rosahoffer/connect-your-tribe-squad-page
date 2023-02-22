@@ -17,12 +17,144 @@ body{
   background-color: var(--primary);
 }
 
-.top-head{
+main{
+  position: relative;
+}
+
+h1{
+  font-size: 5rem;
+  color: white;
+  font-weight: 900;
+  font-style: italic;
+}
+
+h3{
+  font-size: 1.8rem; 
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--secondary);
+  padding-bottom: 2rem;
+}
+
+p{
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: #7B706F;
+}
+
+/* HOMEPAGE */
+
+.background-container > img{
+  width: 100vw;
+}
+
+.circle-squadpage{
+  position: absolute;
+  align-items: center;
+  width: 30rem;
+  height: 30rem;
+  text-align: center;
+  top: -2rem;
+  right: 10rem;
+  background: white;
+  border-radius: 50%;
+  padding: 6rem;
+  border: solid 1rem var(--primary);
+  /* background-image: url("images/circle-pink.png"); */
+}
+
+.circle-squadpage > p{
+  padding-bottom: 3rem;
+}
+
+.circle-squadpage > a{
+  color: white;
+  text-decoration: none;
+  background-color: var(--secondary);
+  border-radius: 25px;
+  padding: 1rem 2rem 1rem 2rem;
+  box-shadow: 3px 2px 5px #838383;
+  transition: 0.3s;
+}
+
+.circle-squadpage > a:hover{
+  text-decoration: underline;
+}
+
+.intro-title{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 15rem;
+  padding: 5rem 20rem 5rem 5rem;
+  background: linear-gradient(90deg,#FA4A6A, transparent);
+}
+
+.intro-title-span1{
+  font-size: 6rem;
+  color: white;
+  font-weight: 900;
+  font-style: italic;
+  margin-left: 6rem;
+}
+
+.intro-title-span2{
+  font-size: 6rem;
+  color: white;
+  font-weight: 600;
+  font-style: italic;
+  margin-left: 9rem;
+}
+
+.intro-title-span3{
+  font-size: 6rem;
+  color: white;
+  font-weight: 900;
+  font-style: italic;
+  margin-left: 12rem;
+}
+
+/* SVGTJES */
+
+.heart-fdnd-love{
+  position: absolute;
+  top: 40rem;
+  right: -8rem;
+}
+
+.heart-dark-pink{
+  position: absolute;
+  top: 2rem;
+  left: -1rem;
+}
+
+.circles-dark-pink{
+  position: absolute;
+  top: -2rem;
+  right: 40rem;
+}
+
+.circles-white-pink{
+  position: absolute;
+  top: 50rem;
+  left: 3rem;
+}
+
+.hearts-white-pink{
+  position: absolute;
+  top: 32rem;
+  right: -1rem;
+}
+
+/* MEMBERS  */
+
+.top-title{
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 2.5rem;
-  padding: 5rem 1rem 8rem 1rem;
+  font-size: 3rem;
+  font-style: italic;
+  padding: 10rem 1rem 10rem 1rem;
 }
 
 .members-squad{
@@ -79,4 +211,8 @@ article > div > a {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease 0s;
   cursor: pointer;
+}
+
+article > div > a:hover {
+  text-decoration: underline;
 }
