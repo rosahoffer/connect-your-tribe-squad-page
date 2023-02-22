@@ -1,7 +1,8 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # Squadpage
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+Een squadpagina op basis van een bestaande API gesorteerd op relatie-status
+![tablet_laptop_and_smartphone_squadpage](https://user-images.githubusercontent.com/112861375/220640665-8ca69cd5-03e1-44db-890c-c62fc9507845.png)
 
 ## Inhoudsopgave
 
