@@ -17,8 +17,13 @@ body{
   background-color: var(--primary);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 main{
   position: relative;
+  overflow: hidden;
 }
 
 h1{
@@ -46,6 +51,7 @@ p{
 
 .background-container > img{
   width: 100vw;
+  height: 100vh;
 }
 
 .circle-squadpage{
@@ -60,7 +66,6 @@ p{
   border-radius: 50%;
   padding: 6rem;
   border: solid 1rem var(--primary);
-  /* background-image: url("images/circle-pink.png"); */
 }
 
 .circle-squadpage > p{
@@ -154,7 +159,47 @@ p{
   color: white;
   font-size: 3rem;
   font-style: italic;
-  padding: 10rem 1rem 10rem 1rem;
+  padding: 10rem 1rem 5rem 1rem;
+}
+
+.top-title > p{
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  padding-top: 3rem;
+}
+
+.filter-members{
+  padding: 0rem 1rem 10rem 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: -1rem;
+}
+
+
+.filter-members > a{
+  color: var(--primary);
+  text-decoration: none;
+  background-color: white;
+  border-radius: 25px;
+  padding: 1rem 2rem 1rem 2rem;
+  border: solid 2px white;
+  transition: 0.3s;
+}
+
+.filter-members > a:nth-child(2){
+  color: white;
+  text-decoration: none;
+  background-color: var(--primary);
+  border-radius: 25px;
+  padding: 1rem 2rem 1rem 2rem;
+  border: solid 2px white;
+  transition: 0.3s;
+}
+
+.filter-members > a:hover{
+  text-decoration: underline;
 }
 
 .members-squad{
@@ -162,7 +207,7 @@ p{
   flex-flow: wrap;
   gap: 5rem;
   justify-content: space-evenly;
-  padding: 0rem 15rem 0rem 15rem;
+  padding: 0rem 10rem 0rem 10rem;
 }
 
 .members-squad > article{
@@ -201,6 +246,7 @@ article > div{
 }
 
 article > div > a {
+  position: absolute;
   font-size: 1rem;
   font-weight: light;
   color: var(--secondary);
@@ -211,8 +257,116 @@ article > div > a {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease 0s;
   cursor: pointer;
+  bottom: 10%;
+  right: 23%;
 }
 
 article > div > a:hover {
   text-decoration: underline;
+}
+
+ /* BREAKPOINTS */
+
+ @media (max-width:90rem){
+
+  .background-container > img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .intro-title{
+    padding: 5rem 0rem 5rem 2rem;
+  }
+
+  .members-squad{
+    gap: 5rem;
+    padding: 0rem 7rem 0rem 7rem;
+  }
+}
+
+@media (max-width:70rem){
+
+  .background-container > img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .circle-squadpage{
+    right: 0;
+  }
+
+  .intro-title{
+    padding: 5rem 0rem 5rem 0rem;
+  }
+
+  .members-squad{
+    gap: 3rem;
+    padding: 0rem 3rem 0rem 3rem;
+  }
+
+  .members-squad > article{
+    margin-top: 3rem;
+  }
+}
+ 
+ @media (max-width:50rem){
+
+  .background-container > img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .intro-title{
+    width: 100%;
+    top: 0;
+    background: linear-gradient(#FA4A6A,transparent);
+  }
+
+  .intro-title span{
+    margin: 0;
+    text-align: center;
+  }
+
+  .circle-squadpage{
+    width: 40rem;
+    height: 40rem;
+    right: -2rem;
+    top: 8%;
+    padding: 10rem;
+  }
+
+  main > svg{
+    display: none;
+  }
+
+  .top-title{
+    padding: 20rem 3rem 0rem 3rem;
+  }
+
+  .filter-members{
+    margin-top: 5rem;
+  }
+
+  .members-squad{
+    gap: 3rem;
+  }
+}
+
+@media (max-width:30rem){
+
+  .intro-title span{
+    font-size: 5rem;
+  }
+
+  .circle-squadpage{
+    width: 30rem;
+    height: 30rem;
+    inset: 0;
+    top: 4%;
+    padding: 5rem;
+  }
+
+  .top-title{
+    padding-top: 20rem;
+  }
 }
