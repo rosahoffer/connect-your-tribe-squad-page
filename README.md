@@ -15,7 +15,6 @@ Een squadpagina op basis van een bestaande API gesorteerd op relatie-status.
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 
 ## Kenmerken
-Ik heb gewerkt met Node, HTML en CSS
 
 ### Wat is Node?
 Node is een open-source, cross-platform JavaScript omgeving. Het stelt ontwikkelaars in staat om JavaScript te gebruiken voor server-side scripting en om dynamische webpagina's en -applicaties te bouwen. Het wordt vaak gebruikt voor het bouwen van real-time webtoepassingen, API's, microservices, back-end systemen en meer.
